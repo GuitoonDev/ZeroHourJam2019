@@ -18,7 +18,7 @@ public class TextSequence : MonoBehaviour
     private IEnumerator TextSequenceLoop(){
         int currentTextIndex = 0;
         while(true) {
-            float randomValue = Random.Range(secondsBetweenEachText - deltaSeconds * 0.5f, secondsBetweenEachText + deltaSeconds * 0.5f);
+            float randomValue = Random.Range(secondsBetweenEachText - deltaSeconds, secondsBetweenEachText);
             textReference.text = textArray[currentTextIndex++];
 
             if(currentTextIndex == textArray.Length) {

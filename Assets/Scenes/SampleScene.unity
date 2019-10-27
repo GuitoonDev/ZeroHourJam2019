@@ -412,7 +412,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 930.3, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1587967500
 MonoBehaviour:
@@ -428,11 +428,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textReference: {fileID: 1587967501}
   textArray:
-  - TEST
-  - 1
-  - 2
-  - 1
-  - 2
+  - TEST...
+  - 1...
+  - 2...
+  - 1...
+  - 2...
   secondsBetweenEachText: 2
   deltaSeconds: 1
 --- !u!114 &1587967501
@@ -457,8 +457,9 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: TEST
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d9cb1fbe33e6d5b4eb08f19cff444287, type: 2}
+  m_sharedMaterial: {fileID: 8920249858601516348, guid: d9cb1fbe33e6d5b4eb08f19cff444287,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -483,8 +484,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 66.07
+  m_fontSizeBase: 66.07
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
