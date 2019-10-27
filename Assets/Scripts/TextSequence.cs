@@ -6,7 +6,7 @@ using UnityEngine;
 public class TextSequence : MonoBehaviour
 {
     public TextMeshProUGUI textReference = null;
-    public string[] textArray;
+    public string[] textArray = null;
     public float secondsBetweenEachText = 2f;
     public float deltaSeconds = 0.2f;
 
@@ -16,15 +16,15 @@ public class TextSequence : MonoBehaviour
     }
 
     private IEnumerator TextSequenceLoop(){
-        int currentTextIndex = 0;
+        int currentTextSequenceIndex = 0;
         while(true) {
-            float randomValue = Random.Range(secondsBetweenEachText - deltaSeconds, secondsBetweenEachText);
-            textReference.text = textArray[currentTextIndex++];
+            textReference.text = textArray[currentTextSequenceIndex++];
 
-            if(currentTextIndex == textArray.Length) {
-                currentTextIndex = 0;
+            if(currentTextSequenceIndex == textArray.Length) {
+                currentTextSequenceIndex = 0;
             }
 
+            float randomValue = Random.Range(secondsBetweenEachText - deltaSeconds, secondsBetweenEachText);
             yield return new WaitForSeconds(randomValue);
         }
     }
