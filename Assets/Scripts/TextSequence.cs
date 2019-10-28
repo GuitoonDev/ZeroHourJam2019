@@ -10,7 +10,7 @@ public class TextSequence : MonoBehaviour
     public float secondsBetweenEachText = 2f;
     public float deltaSeconds = 0.2f;
 
-    private void Start()
+    public void Begin()
     {
         StartCoroutine(TextSequenceLoop());
     }
